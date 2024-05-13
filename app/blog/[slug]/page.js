@@ -1,7 +1,14 @@
-const BlogPage = ({ params }) => {
-  return (
-      <div>page {JSON.stringify(params)}</div>
-  )
-}
+import { notFound } from 'next/navigation';
 
-export default BlogPage
+const BlogPage = ({ params }) => {
+
+  if (!['first', 'second'].includes(params.slug)) {
+    notFound();
+  }
+
+  return (
+    <div>page {JSON.stringify(params)}</div>
+  );
+};
+
+export default BlogPage;
