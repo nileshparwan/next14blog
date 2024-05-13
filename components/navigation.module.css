@@ -1,0 +1,5 @@
+.link {
+    @apply p-1 text-2xl
+    hover:bg-gray-200 hover:text-gray-700
+    md:text-base
+}
