@@ -5,7 +5,7 @@ import ProjectListLoading from "./components/project-list-loading";
 
 const ProjectsPage = async () => {
     return (
-        <div>
+        <section>
             <h1 className="mb-8 text-xl">
                 Projects
             </h1>
@@ -17,7 +17,7 @@ const ProjectsPage = async () => {
                     <ProjectList />
                 </Suspense>
             </ErrorBoundary>
-        </div >
+        </section >
     );
 };
 
