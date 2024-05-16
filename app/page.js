@@ -21,7 +21,7 @@ export default function Home({ searchParams }) {
   return (
     <>
       <div className="space-y-4">
-        <div>Hello, sdsd{name}</div>
+        <div>Hello, {name}</div>
         {cards}
         <div className="flex space-x-4">
           <button type="button" onClick={handleClick}>

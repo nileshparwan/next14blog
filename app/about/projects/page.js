@@ -11,7 +11,6 @@ const ProjectsPage = async () => {
             </h1>
 
             <div className="mb-8">Hello, this is the list of my repos!</div>
-
             <ErrorBoundary fallback={<div>Cannot fetch projects currently</div>}>
                 <Suspense fallback={<ProjectListLoading />}>
                     <ProjectList />
