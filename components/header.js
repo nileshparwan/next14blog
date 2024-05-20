@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Navigation from "./navigation";
 
-const Header = () => {
+export default function Header() {
     return (
         <header className="flex justify-between md:items-center mt-4">
             <div className="flex items-center md:space-x-12">
@@ -16,5 +16,3 @@ const Header = () => {
         </header>
     );
 };
-
-export default Header;

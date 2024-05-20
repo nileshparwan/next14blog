@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './navigation.module.css';
 
-const Navigation = () => {
+export default function Navigation() {
     return (
         <nav className='font-mono'>
             <ul className="flex md:space-x-4 flex-col md:flex-row">
@@ -13,5 +13,3 @@ const Navigation = () => {
         </nav>
     );
 };
-
-export default Navigation;
