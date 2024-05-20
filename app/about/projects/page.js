@@ -3,7 +3,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import ProjectList from "./components/project-list";
 import ProjectListLoading from "./components/project-list-loading";
 
-const ProjectsPage = async () => {
+export default async function ProjectsPage() {
     return (
         <section>
             <h1 className="mb-8 text-xl">
@@ -19,5 +19,3 @@ const ProjectsPage = async () => {
         </section >
     );
 };
-
-export default ProjectsPage;

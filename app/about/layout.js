@@ -1,4 +1,4 @@
-const AboutLayout = ({ children }) => {
+export default function AboutLayout({ children }) {
     return (
         <section>
             <div>{children}</div>
@@ -14,5 +14,3 @@ const AboutLayout = ({ children }) => {
         </section>
     );
 };
-
-export default AboutLayout;

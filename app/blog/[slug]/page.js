@@ -1,6 +1,10 @@
 import { notFound } from 'next/navigation';
 
-const BlogPage = ({ params }) => {
+export const metadata = {
+  title: "Blog",
+};
+
+export default function BlogPage({ params }) {
 
   if (!['first', 'second'].includes(params.slug)) {
     notFound();
@@ -10,5 +14,3 @@ const BlogPage = ({ params }) => {
     <div>page {JSON.stringify(params)}</div>
   );
 };
-
-export default BlogPage;
